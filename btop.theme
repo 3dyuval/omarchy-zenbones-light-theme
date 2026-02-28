@@ -1,0 +1,81 @@
+# Theme: vite
+# Inspired by vite.dev
+
+# Main bg
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#ffffff"
+
+# Title color for boxes
+theme[title]="#ffffff"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#b39aff"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#3b3440"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#ffffff"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#827a89"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#b39aff"
+
+# Cpu box outline color
+theme[cpu_box]="#3b3440"
+
+# Memory/disks box outline color
+theme[mem_box]="#3b3440"
+
+# Net up/down box outline color
+theme[net_box]="#3b3440"
+
+# Processes box outline color
+theme[proc_box]="#3b3440"
+
+# Box divider line and small boxes line color
+theme[div_line]="#3b3440"
+
+# Temperature graph colors
+theme[temp_start]="#22ff73"
+theme[temp_mid]="#f9b44e"
+theme[temp_end]="#f66f81"
+
+# CPU graph colors
+theme[cpu_start]="#6c3bff"
+theme[cpu_mid]="#b39aff"
+theme[cpu_end]="#f66f81"
+
+# Mem/Disk free meter
+theme[free_start]="#22ff73"
+theme[free_mid]="#f9b44e"
+theme[free_end]="#f66f81"
+
+# Mem/Disk cached meter
+theme[cached_start]="#6c3bff"
+theme[cached_mid]="#b39aff"
+theme[cached_end]="#f66f81"
+
+# Mem/Disk available meter
+theme[available_start]="#22ff73"
+theme[available_mid]="#f9b44e"
+theme[available_end]="#f66f81"
+
+# Mem/Disk used meter
+theme[used_start]="#22ff73"
+theme[used_mid]="#f9b44e"
+theme[used_end]="#f66f81"
+
+# Download graph colors
+theme[download_start]="#22ff73"
+theme[download_mid]="#b39aff"
+theme[download_end]="#6c3bff"
+
+# Upload graph colors
+theme[upload_start]="#22ff73"
+theme[upload_mid]="#b39aff"
+theme[upload_end]="#6c3bff"
