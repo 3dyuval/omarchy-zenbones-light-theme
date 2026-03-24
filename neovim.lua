@@ -24,7 +24,7 @@ return {
         }
         for i, color in ipairs(shades) do
           vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i,                 { fg = color, bold = true })
-          vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg",         { bg = wood.lighten(40 + i * 3).hex })
+          vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg",         { bg = wood.rotate(18).desaturate(35).lighten(40 + i * 3).hex })
           vim.api.nvim_set_hl(0, "@markup.heading." .. i .. ".markdown", { fg = color, bold = true })
         end
       end
