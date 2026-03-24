@@ -11,6 +11,7 @@ return {
     config = function()
       local palette = require("zenbones.palette").light
       local fg = palette.fg
+      local wood = palette.wood
       local function apply()
         -- h1 = darkest (most prominent), h6 = lightest, staggered from fg
         local shades = {
@@ -21,11 +22,9 @@ return {
           fg.lighten(20).hex,
           fg.lighten(25).hex,
         }
-        -- bg: use fg as a subtle tint, very light
-        local bg_base = fg
         for i, color in ipairs(shades) do
           vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i,                 { fg = color, bold = true })
-          vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg",         { bg = bg_base.lighten(60 + i * 4).hex })
+          vim.api.nvim_set_hl(0, "RenderMarkdownH" .. i .. "Bg",         { bg = wood.lighten(40 + i * 3).hex })
           vim.api.nvim_set_hl(0, "@markup.heading." .. i .. ".markdown", { fg = color, bold = true })
         end
       end
